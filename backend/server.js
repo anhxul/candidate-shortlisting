@@ -10,8 +10,8 @@ dns.setServers(["8.8.8.8", "1.1.1.1"]);
 const app = express();
 app.use(cors({
   origin: [
-    "http://localhost:5173",                          // local dev
-    "https://candidate-shortlisting-7nmf.onrender.com"       // production
+    "http://localhost:5173",
+    "https://candidate-shortlisting-frontend.onrender.com" // apna frontend URL yahan
   ]
 }));
 app.use(express.json());
