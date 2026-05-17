@@ -8,7 +8,12 @@ require("dotenv").config();
 dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",                          // local dev
+    "https://candidate-shortlisting-7nmf.onrender.com"       // production
+  ]
+}));
 app.use(express.json());
 
 // ── MongoDB Connect ──────────────────────────────────

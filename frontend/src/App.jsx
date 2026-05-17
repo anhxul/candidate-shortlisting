@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 
-const BACKEND = "http://localhost:5000";
+const BACKEND = "https://candidate-shortlisting-7nmf.onrender.com";
 
 const INITIAL_CANDIDATES = [
   { id: 1, name: "Rahul Sharma", email: "rahul@gmail.com", skills: ["React", "Node.js", "MongoDB"], experience: 2, bio: "Full-stack developer with 2 years building scalable web apps.", createdAt: new Date().toISOString() },
